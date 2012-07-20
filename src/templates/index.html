@@ -14,22 +14,14 @@
               height: 100%;
               color: #333;
               font: 14px helvetica, sans-serif;
-              background: #ddd;
-              background: -webkit-radial-gradient(circle,#aaa,#eee 60%) center fixed;
-              background: -moz-radial-gradient(circle,#aaa,#eee 60%) center fixed;
-              background: -ms-radial-gradient(circle,#aaa,#eee 60%) center fixed;
-              background: -o-radial-gradient(circle,#aaa,#eee 60%) center fixed;
+              background: #CDDAC3;
               border-top: 8px solid rgba(51,51,51,.8);
             }
             #wrapper {
               border-top: 1px solid #999;
               margin-top: 160px;
               padding: 15px;
-              background: #eee;
-              background: -webkit-linear-gradient(#fff,#ccc);
-              background: -moz-linear-gradient(#fff,#ccc);
-              background: -ms-linear-gradient(#fff,#ccc);
-              background: -o-linear-gradient(#fff,#ccc);
+              background: #fff;
               opacity: .9;
               box-shadow: 0px 1px 8px rgba(0,0,0,0.3);
             }
@@ -116,17 +108,32 @@
                 text-align: center;
               }
             }
+
+            #inner a {
+              color: green;
+              margin-top: 2em;
+              display: block;
+              text-align: center;
+            }
+
+            #inner img {
+              padding: 1em 0 1em 0;
+            }
         </style>
         <link href="static/custom/index.css" rel="stylesheet"> 
 
         <div id="wrapper">
             <div id="inner">
+                <img src="/static/img/nodewing.png" alt="The l4rp node wing">
                 <div id="button" onclick="go2Random()" class="translate">New Pad</div>
                 <div id="label" class="translate">or create/open a Pad with the name</div> 
                 <form action="#" onsubmit="go2Name();return false;"> 
                     <input type="text" id="padname" autofocus x-webkit-speech> 
                     <button type="submit">OK</button>
                 </form>
+                <a href="http://l4rp.com/" title="The lab for the recently possible">
+                  http://l4rp.com/
+                </a>
             </div>
         </div>
 
